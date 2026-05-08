@@ -1,0 +1,16 @@
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\bin\Debug\net8.0-windows\DigitalProyectoFinal.exe
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\bin\Debug\net8.0-windows\DigitalProyectoFinal.deps.json
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\bin\Debug\net8.0-windows\DigitalProyectoFinal.runtimeconfig.json
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\bin\Debug\net8.0-windows\DigitalProyectoFinal.dll
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\bin\Debug\net8.0-windows\DigitalProyectoFinal.pdb
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\obj\Debug\net8.0-windows\DigitalProyectoFinal.Form1.resources
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\obj\Debug\net8.0-windows\DigitalProyectoFinal.csproj.GenerateResource.cache
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\obj\Debug\net8.0-windows\DigitalProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\obj\Debug\net8.0-windows\DigitalProyectoFinal.AssemblyInfoInputs.cache
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\obj\Debug\net8.0-windows\DigitalProyectoFinal.AssemblyInfo.cs
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\obj\Debug\net8.0-windows\DigitalProyectoFinal.csproj.CoreCompileInputs.cache
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\obj\Debug\net8.0-windows\DigitalProyectoFinal.dll
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\obj\Debug\net8.0-windows\refint\DigitalProyectoFinal.dll
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\obj\Debug\net8.0-windows\DigitalProyectoFinal.pdb
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\obj\Debug\net8.0-windows\DigitalProyectoFinal.genruntimeconfig.cache
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\obj\Debug\net8.0-windows\ref\DigitalProyectoFinal.dll
