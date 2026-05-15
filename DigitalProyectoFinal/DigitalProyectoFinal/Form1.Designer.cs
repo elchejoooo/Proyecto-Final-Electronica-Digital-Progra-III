@@ -31,7 +31,13 @@
             lblPrecioActual = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            lblEstadoGlobal = new Label();
             groupBox1 = new GroupBox();
+            btnPagoTanqueTotal = new Button();
+            label15 = new Label();
+            btnPagoPrepago = new Button();
+            label14 = new Label();
+            txtPagoPrepago = new TextBox();
             btnApagarBomba4 = new Button();
             btnEncenderBomba4 = new Button();
             btnApagarBomba3 = new Button();
@@ -72,12 +78,6 @@
             btnCierreDiario = new Button();
             label5 = new Label();
             dtgvServicios = new DataGridView();
-            txtPagoPrepago = new TextBox();
-            label14 = new Label();
-            btnPagoPrepago = new Button();
-            label15 = new Label();
-            txtSizeTanquePago = new TextBox();
-            btnPagoTanqueTotal = new Button();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -104,12 +104,13 @@
             tabControl1.Location = new Point(3, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(2860, 1134);
+            tabControl1.Size = new Size(2860, 1320);
             tabControl1.TabIndex = 1;
             // 
             // tabPage1
             // 
             tabPage1.AllowDrop = true;
+            tabPage1.Controls.Add(lblEstadoGlobal);
             tabPage1.Controls.Add(groupBox1);
             tabPage1.Controls.Add(btnApagarBomba4);
             tabPage1.Controls.Add(btnEncenderBomba4);
@@ -131,15 +132,24 @@
             tabPage1.Location = new Point(10, 58);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(2840, 1066);
+            tabPage1.Size = new Size(2840, 1252);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Despacho de Gasolina";
             tabPage1.UseVisualStyleBackColor = true;
             // 
+            // lblEstadoGlobal
+            // 
+            lblEstadoGlobal.AutoSize = true;
+            lblEstadoGlobal.Font = new Font("Segoe UI", 20.1F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblEstadoGlobal.Location = new Point(52, 1102);
+            lblEstadoGlobal.Name = "lblEstadoGlobal";
+            lblEstadoGlobal.Size = new Size(443, 89);
+            lblEstadoGlobal.TabIndex = 18;
+            lblEstadoGlobal.Text = "Estado Global";
+            // 
             // groupBox1
             // 
             groupBox1.Controls.Add(btnPagoTanqueTotal);
-            groupBox1.Controls.Add(txtSizeTanquePago);
             groupBox1.Controls.Add(label15);
             groupBox1.Controls.Add(btnPagoPrepago);
             groupBox1.Controls.Add(label14);
@@ -151,6 +161,51 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBoxMetodoPago";
             // 
+            // btnPagoTanqueTotal
+            // 
+            btnPagoTanqueTotal.Location = new Point(21, 380);
+            btnPagoTanqueTotal.Name = "btnPagoTanqueTotal";
+            btnPagoTanqueTotal.Size = new Size(289, 53);
+            btnPagoTanqueTotal.TabIndex = 5;
+            btnPagoTanqueTotal.Text = "Pago Total";
+            btnPagoTanqueTotal.UseVisualStyleBackColor = true;
+            btnPagoTanqueTotal.Click += btnPagoTanqueTotal_Click;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(21, 326);
+            label15.Name = "label15";
+            label15.Size = new Size(532, 41);
+            label15.TabIndex = 3;
+            label15.Text = "Pago Total (Ingrese tamaño de tanque)";
+            // 
+            // btnPagoPrepago
+            // 
+            btnPagoPrepago.Location = new Point(24, 228);
+            btnPagoPrepago.Name = "btnPagoPrepago";
+            btnPagoPrepago.Size = new Size(289, 53);
+            btnPagoPrepago.TabIndex = 2;
+            btnPagoPrepago.Text = "Pago Prepago";
+            btnPagoPrepago.UseVisualStyleBackColor = true;
+            btnPagoPrepago.Click += btnPagoPrepago_Click;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(24, 95);
+            label14.Name = "label14";
+            label14.Size = new Size(292, 41);
+            label14.TabIndex = 1;
+            label14.Text = "Ingreso por Prepago";
+            // 
+            // txtPagoPrepago
+            // 
+            txtPagoPrepago.Location = new Point(24, 154);
+            txtPagoPrepago.Name = "txtPagoPrepago";
+            txtPagoPrepago.Size = new Size(526, 47);
+            txtPagoPrepago.TabIndex = 0;
+            // 
             // btnApagarBomba4
             // 
             btnApagarBomba4.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -160,6 +215,7 @@
             btnApagarBomba4.TabIndex = 16;
             btnApagarBomba4.Text = "Apagar";
             btnApagarBomba4.UseVisualStyleBackColor = true;
+            btnApagarBomba4.Click += btnApagarBomba4_Click;
             // 
             // btnEncenderBomba4
             // 
@@ -170,6 +226,7 @@
             btnEncenderBomba4.TabIndex = 15;
             btnEncenderBomba4.Text = "Encender";
             btnEncenderBomba4.UseVisualStyleBackColor = true;
+            btnEncenderBomba4.Click += btnEncenderBomba4_Click;
             // 
             // btnApagarBomba3
             // 
@@ -180,6 +237,7 @@
             btnApagarBomba3.TabIndex = 14;
             btnApagarBomba3.Text = "Apagar";
             btnApagarBomba3.UseVisualStyleBackColor = true;
+            btnApagarBomba3.Click += btnApagarBomba3_Click;
             // 
             // btnEncenderBomba3
             // 
@@ -190,6 +248,7 @@
             btnEncenderBomba3.TabIndex = 13;
             btnEncenderBomba3.Text = "Encender";
             btnEncenderBomba3.UseVisualStyleBackColor = true;
+            btnEncenderBomba3.Click += btnEncenderBomba3_Click;
             // 
             // btnApagarBomba2
             // 
@@ -200,6 +259,7 @@
             btnApagarBomba2.TabIndex = 12;
             btnApagarBomba2.Text = "Apagar";
             btnApagarBomba2.UseVisualStyleBackColor = true;
+            btnApagarBomba2.Click += btnApagarBomba2_Click;
             // 
             // btnEncenderBomba2
             // 
@@ -210,6 +270,7 @@
             btnEncenderBomba2.TabIndex = 11;
             btnEncenderBomba2.Text = "Encender";
             btnEncenderBomba2.UseVisualStyleBackColor = true;
+            btnEncenderBomba2.Click += btnEncenderBomba2_Click;
             // 
             // lblEstadoBomba4
             // 
@@ -260,6 +321,7 @@
             btnApagarBomba1.TabIndex = 6;
             btnApagarBomba1.Text = "Apagar";
             btnApagarBomba1.UseVisualStyleBackColor = true;
+            btnApagarBomba1.Click += btnApagarBomba1_Click;
             // 
             // btnEncenderBomba1
             // 
@@ -270,6 +332,7 @@
             btnEncenderBomba1.TabIndex = 5;
             btnEncenderBomba1.Text = "Encender";
             btnEncenderBomba1.UseVisualStyleBackColor = true;
+            btnEncenderBomba1.Click += btnEncenderBomba1_Click;
             // 
             // label4
             // 
@@ -329,7 +392,7 @@
             tabPage2.Location = new Point(10, 58);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(2840, 1066);
+            tabPage2.Size = new Size(2840, 1252);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Administracion de Precio";
             tabPage2.UseVisualStyleBackColor = true;
@@ -343,6 +406,7 @@
             btnAjustarPrecio4.TabIndex = 14;
             btnAjustarPrecio4.Text = "Ajustar";
             btnAjustarPrecio4.UseVisualStyleBackColor = true;
+            btnAjustarPrecio4.Click += btnAjustarPrecio4_Click;
             // 
             // btnAjustarPrecio3
             // 
@@ -353,6 +417,7 @@
             btnAjustarPrecio3.TabIndex = 13;
             btnAjustarPrecio3.Text = "Ajustar";
             btnAjustarPrecio3.UseVisualStyleBackColor = true;
+            btnAjustarPrecio3.Click += btnAjustarPrecio3_Click;
             // 
             // btnAjustarPrecio2
             // 
@@ -363,6 +428,7 @@
             btnAjustarPrecio2.TabIndex = 12;
             btnAjustarPrecio2.Text = "Ajustar";
             btnAjustarPrecio2.UseVisualStyleBackColor = true;
+            btnAjustarPrecio2.Click += btnAjustarPrecio2_Click;
             // 
             // btnAjustarPrecio1
             // 
@@ -373,6 +439,7 @@
             btnAjustarPrecio1.TabIndex = 11;
             btnAjustarPrecio1.Text = "Ajustar";
             btnAjustarPrecio1.UseVisualStyleBackColor = true;
+            btnAjustarPrecio1.Click += btnAjustarPrecio1_Click;
             // 
             // txtPrecioBomba4
             // 
@@ -470,7 +537,7 @@
             tabPage3.Location = new Point(10, 58);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(2840, 1066);
+            tabPage3.Size = new Size(2840, 1252);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Historial de servicio";
             tabPage3.UseVisualStyleBackColor = true;
@@ -556,65 +623,16 @@
             dtgvServicios.Size = new Size(2206, 1062);
             dtgvServicios.TabIndex = 0;
             // 
-            // txtPagoPrepago
-            // 
-            txtPagoPrepago.Location = new Point(24, 154);
-            txtPagoPrepago.Name = "txtPagoPrepago";
-            txtPagoPrepago.Size = new Size(526, 47);
-            txtPagoPrepago.TabIndex = 0;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(24, 95);
-            label14.Name = "label14";
-            label14.Size = new Size(292, 41);
-            label14.TabIndex = 1;
-            label14.Text = "Ingreso por Prepago";
-            // 
-            // btnPagoPrepago
-            // 
-            btnPagoPrepago.Location = new Point(24, 228);
-            btnPagoPrepago.Name = "btnPagoPrepago";
-            btnPagoPrepago.Size = new Size(289, 53);
-            btnPagoPrepago.TabIndex = 2;
-            btnPagoPrepago.Text = "Pago Prepago";
-            btnPagoPrepago.UseVisualStyleBackColor = true;
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Location = new Point(21, 326);
-            label15.Name = "label15";
-            label15.Size = new Size(532, 41);
-            label15.TabIndex = 3;
-            label15.Text = "Pago Total (Ingrese tamaño de tanque)";
-            // 
-            // txtSizeTanquePago
-            // 
-            txtSizeTanquePago.Location = new Point(24, 382);
-            txtSizeTanquePago.Name = "txtSizeTanquePago";
-            txtSizeTanquePago.Size = new Size(526, 47);
-            txtSizeTanquePago.TabIndex = 4;
-            // 
-            // btnPagoTanqueTotal
-            // 
-            btnPagoTanqueTotal.Location = new Point(27, 455);
-            btnPagoTanqueTotal.Name = "btnPagoTanqueTotal";
-            btnPagoTanqueTotal.Size = new Size(289, 53);
-            btnPagoTanqueTotal.TabIndex = 5;
-            btnPagoTanqueTotal.Text = "Pago Total";
-            btnPagoTanqueTotal.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(2899, 1146);
+            ClientSize = new Size(2899, 1323);
             Controls.Add(tabControl1);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
@@ -677,8 +695,8 @@
         private Label label14;
         private TextBox txtPagoPrepago;
         private Button btnPagoTanqueTotal;
-        private TextBox txtSizeTanquePago;
         private Label label15;
         private Button btnPagoPrepago;
+        private Label lblEstadoGlobal;
     }
 }
