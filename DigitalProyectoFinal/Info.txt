@@ -1,0 +1,14 @@
+﻿Conexión de los Sensores de Cobre
+
+Para que este código funcione, la conexión física de tus cables al final de la manguera debe ser así:
+Cable 1 (Referencia): Conéctalo al pin GND del Arduino. Este cable debe estar sumergido o en la punta de la salida.
+Cable 2 (Detección): Conéctalo al pin digital correspondiente (7, 8, 9 o 10).
+¿Cómo funciona?: Gracias al INPUT_PULLUP, el Arduino "inyecta" un poquito de voltaje al Cable 2. 
+Cuando el agua salada (que es conductora) toca el Cable 1 y el Cable 2 al mismo tiempo, el voltaje se va a tierra (GND) y el Arduino detecta el cambio de HIGH a LOW.
+
+Pequeña observación para C#
+En tu código de C#, dentro de DataReceivedHandler, pusiste:
+string data = spArduino.ReadLine().Trim();
+
+Asegúrate de que en el Arduino siempre uses Serial.println() (con la "ln" al final). Si usas solo Serial.print(), 
+C# se quedará esperando eternamente el final de la línea y el programa podría trabarse. En el código que se realizo en la version II el 11 de mayo 2026 ya incluye println
