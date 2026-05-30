@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hMIMYAkRe0U=",
+  "dgSpecHash": "6nyq7eks4cg=",
   "success": true,
   "projectFilePath": "C:\\Users\\PRECISION 5530\\Documents\\Universidad\\3er Semestre\\Proyecto Final Digital\\DigitalProyectoFinal\\DigitalProyectoFinal\\DigitalProyectoFinal.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,9 @@
     "C:\\Users\\PRECISION 5530\\.nuget\\packages\\runtime.native.system.io.ports\\10.0.7\\runtime.native.system.io.ports.10.0.7.nupkg.sha512",
     "C:\\Users\\PRECISION 5530\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\10.0.7\\runtime.osx-arm64.runtime.native.system.io.ports.10.0.7.nupkg.sha512",
     "C:\\Users\\PRECISION 5530\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\10.0.7\\runtime.osx-x64.runtime.native.system.io.ports.10.0.7.nupkg.sha512",
+    "C:\\Users\\PRECISION 5530\\.nuget\\packages\\system.codedom\\10.0.8\\system.codedom.10.0.8.nupkg.sha512",
     "C:\\Users\\PRECISION 5530\\.nuget\\packages\\system.io.ports\\10.0.7\\system.io.ports.10.0.7.nupkg.sha512",
+    "C:\\Users\\PRECISION 5530\\.nuget\\packages\\system.management\\10.0.8\\system.management.10.0.8.nupkg.sha512",
     "C:\\Users\\PRECISION 5530\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.23\\microsoft.windowsdesktop.app.ref.8.0.23.nupkg.sha512",
     "C:\\Users\\PRECISION 5530\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.23\\microsoft.netcore.app.ref.8.0.23.nupkg.sha512",
     "C:\\Users\\PRECISION 5530\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.23\\microsoft.aspnetcore.app.ref.8.0.23.nupkg.sha512",

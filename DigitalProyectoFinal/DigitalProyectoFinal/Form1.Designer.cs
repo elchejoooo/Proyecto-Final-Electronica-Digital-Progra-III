@@ -69,6 +69,10 @@
             label10 = new Label();
             label9 = new Label();
             tabPage3 = new TabPage();
+            btnExportarJSON = new Button();
+            btnImportarJSON = new Button();
+            btnExportarXML = new Button();
+            btnImportarXML = new Button();
             btnInformeUsoBombas = new Button();
             label8 = new Label();
             btnInformesTanqueLleno = new Button();
@@ -78,6 +82,7 @@
             btnCierreDiario = new Button();
             label5 = new Label();
             dtgvServicios = new DataGridView();
+            lblEstadoCom = new Label();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -110,6 +115,7 @@
             // tabPage1
             // 
             tabPage1.AllowDrop = true;
+            tabPage1.Controls.Add(lblEstadoCom);
             tabPage1.Controls.Add(lblEstadoGlobal);
             tabPage1.Controls.Add(groupBox1);
             tabPage1.Controls.Add(btnApagarBomba4);
@@ -525,6 +531,10 @@
             // 
             // tabPage3
             // 
+            tabPage3.Controls.Add(btnExportarJSON);
+            tabPage3.Controls.Add(btnImportarJSON);
+            tabPage3.Controls.Add(btnExportarXML);
+            tabPage3.Controls.Add(btnImportarXML);
             tabPage3.Controls.Add(btnInformeUsoBombas);
             tabPage3.Controls.Add(label8);
             tabPage3.Controls.Add(btnInformesTanqueLleno);
@@ -542,6 +552,46 @@
             tabPage3.Text = "Historial de servicio";
             tabPage3.UseVisualStyleBackColor = true;
             // 
+            // btnExportarJSON
+            // 
+            btnExportarJSON.Location = new Point(321, 912);
+            btnExportarJSON.Name = "btnExportarJSON";
+            btnExportarJSON.Size = new Size(282, 114);
+            btnExportarJSON.TabIndex = 12;
+            btnExportarJSON.Text = "Exportar JSON";
+            btnExportarJSON.UseVisualStyleBackColor = true;
+            btnExportarJSON.Click += btnExportarJSON_Click;
+            // 
+            // btnImportarJSON
+            // 
+            btnImportarJSON.Location = new Point(3, 912);
+            btnImportarJSON.Name = "btnImportarJSON";
+            btnImportarJSON.Size = new Size(282, 114);
+            btnImportarJSON.TabIndex = 11;
+            btnImportarJSON.Text = "Importar JSON";
+            btnImportarJSON.UseVisualStyleBackColor = true;
+            btnImportarJSON.Click += btnImportarJSON_Click;
+            // 
+            // btnExportarXML
+            // 
+            btnExportarXML.Location = new Point(321, 761);
+            btnExportarXML.Name = "btnExportarXML";
+            btnExportarXML.Size = new Size(282, 114);
+            btnExportarXML.TabIndex = 10;
+            btnExportarXML.Text = "Exportar XML";
+            btnExportarXML.UseVisualStyleBackColor = true;
+            btnExportarXML.Click += btnExportarXML_Click;
+            // 
+            // btnImportarXML
+            // 
+            btnImportarXML.Location = new Point(6, 761);
+            btnImportarXML.Name = "btnImportarXML";
+            btnImportarXML.Size = new Size(282, 114);
+            btnImportarXML.TabIndex = 9;
+            btnImportarXML.Text = "Importar XML";
+            btnImportarXML.UseVisualStyleBackColor = true;
+            btnImportarXML.Click += btnImportarXML_Click;
+            // 
             // btnInformeUsoBombas
             // 
             btnInformeUsoBombas.Location = new Point(18, 606);
@@ -550,6 +600,7 @@
             btnInformeUsoBombas.TabIndex = 8;
             btnInformeUsoBombas.Text = "Informes Uso de Bombas";
             btnInformeUsoBombas.UseVisualStyleBackColor = true;
+            btnInformeUsoBombas.Click += btnInformeUsoBombas_Click;
             // 
             // label8
             // 
@@ -568,6 +619,7 @@
             btnInformesTanqueLleno.TabIndex = 6;
             btnInformesTanqueLleno.Text = "Informes de Tanque Lleno";
             btnInformesTanqueLleno.UseVisualStyleBackColor = true;
+            btnInformesTanqueLleno.Click += btnInformesTanqueLleno_Click;
             // 
             // label7
             // 
@@ -586,6 +638,7 @@
             btnInformesPrepago.TabIndex = 4;
             btnInformesPrepago.Text = "Informes de Prepago";
             btnInformesPrepago.UseVisualStyleBackColor = true;
+            btnInformesPrepago.Click += btnInformesPrepago_Click;
             // 
             // label6
             // 
@@ -604,6 +657,7 @@
             btnCierreDiario.TabIndex = 2;
             btnCierreDiario.Text = "Cierre Diario";
             btnCierreDiario.UseVisualStyleBackColor = true;
+            btnCierreDiario.Click += btnCierreDiario_Click;
             // 
             // label5
             // 
@@ -622,6 +676,16 @@
             dtgvServicios.RowHeadersWidth = 102;
             dtgvServicios.Size = new Size(2206, 1062);
             dtgvServicios.TabIndex = 0;
+            // 
+            // lblEstadoCom
+            // 
+            lblEstadoCom.AutoSize = true;
+            lblEstadoCom.Font = new Font("Segoe UI", 20.1F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblEstadoCom.Location = new Point(52, 989);
+            lblEstadoCom.Name = "lblEstadoCom";
+            lblEstadoCom.Size = new Size(403, 89);
+            lblEstadoCom.TabIndex = 19;
+            lblEstadoCom.Text = "Estado COM";
             // 
             // Form1
             // 
@@ -698,5 +762,10 @@
         private Label label15;
         private Button btnPagoPrepago;
         private Label lblEstadoGlobal;
+        private Button btnExportarXML;
+        private Button btnImportarXML;
+        private Button btnExportarJSON;
+        private Button btnImportarJSON;
+        private Label lblEstadoCom;
     }
 }

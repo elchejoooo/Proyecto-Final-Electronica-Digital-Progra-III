@@ -35,3 +35,6 @@ C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digita
 C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.IO.Ports.dll
 C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\obj\Debug\net8.0-windows\DigitalProyectoFinal.csproj.AssemblyReference.cache
 C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\obj\Debug\net8.0-windows\DigitalP.F089332C.Up2Date
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\bin\Debug\net8.0-windows\System.CodeDom.dll
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\bin\Debug\net8.0-windows\System.Management.dll
+C:\Users\PRECISION 5530\Documents\Universidad\3er Semestre\Proyecto Final Digital\DigitalProyectoFinal\DigitalProyectoFinal\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Management.dll
